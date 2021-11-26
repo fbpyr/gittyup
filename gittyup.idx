@@ -1,0 +1,161 @@
+GIT_DIFF_OPTIONS_VERSION	gittyup.html#GIT_DIFF_OPTIONS_VERSION	gittyup: GIT_DIFF_OPTIONS_VERSION	
+GIT_STATUS_OPTIONS_VERSION	gittyup.html#GIT_STATUS_OPTIONS_VERSION	gittyup: GIT_STATUS_OPTIONS_VERSION	
+GIT_CLONE_OPTIONS_VERSION	gittyup.html#GIT_CLONE_OPTIONS_VERSION	gittyup: GIT_CLONE_OPTIONS_VERSION	
+GIT_CHECKOUT_OPTIONS_VERSION	gittyup.html#GIT_CHECKOUT_OPTIONS_VERSION	gittyup: GIT_CHECKOUT_OPTIONS_VERSION	
+GitTreeWalkCallback	gittyup.html#GitTreeWalkCallback	gittyup: GitTreeWalkCallback	
+GitObjectKind	gittyup.html#GitObjectKind	gittyup: GitObjectKind	
+GitThing	gittyup.html#GitThing	gittyup: GitThing	
+GitBuf	gittyup.html#GitBuf	gittyup: GitBuf	
+GitDiff	gittyup.html#GitDiff	gittyup: GitDiff	
+GitPathSpec	gittyup.html#GitPathSpec	gittyup: GitPathSpec	
+GitRevWalker	gittyup.html#GitRevWalker	gittyup: GitRevWalker	
+GitTreeEntry	gittyup.html#GitTreeEntry	gittyup: GitTreeEntry	
+GitTreeEntries	gittyup.html#GitTreeEntries	gittyup: GitTreeEntries	
+GitObject	gittyup.html#GitObject	gittyup: GitObject	
+GitOid	gittyup.html#GitOid	gittyup: GitOid	
+GitOids	gittyup.html#GitOids	gittyup: GitOids	
+GitRemote	gittyup.html#GitRemote	gittyup: GitRemote	
+GitReference	gittyup.html#GitReference	gittyup: GitReference	
+GitRepository	gittyup.html#GitRepository	gittyup: GitRepository	
+GitStrArray	gittyup.html#GitStrArray	gittyup: GitStrArray	
+GitTag	gittyup.html#GitTag	gittyup: GitTag	
+GitCommit	gittyup.html#GitCommit	gittyup: GitCommit	
+GitStatus	gittyup.html#GitStatus	gittyup: GitStatus	
+GitStatusList	gittyup.html#GitStatusList	gittyup: GitStatusList	
+GitTree	gittyup.html#GitTree	gittyup: GitTree	
+GitSignature	gittyup.html#GitSignature	gittyup: GitSignature	
+GitTagTable	gittyup.html#GitTagTable	gittyup: GitTagTable	
+GitResult	gittyup.html#GitResult	gittyup: GitResult	
+GitResultCode	gittyup.html#GitResultCode	gittyup: GitResultCode	
+GitRepoState	gittyup.html#GitRepoState	gittyup: GitRepoState	
+GitCheckoutNotify	gittyup.html#GitCheckoutNotify	gittyup: GitCheckoutNotify	
+GitTreeWalkMode	gittyup.html#GitTreeWalkMode	gittyup: GitTreeWalkMode	
+GitStatusShow	gittyup.html#GitStatusShow	gittyup: GitStatusShow	
+GitStatusFlag	gittyup.html#GitStatusFlag	gittyup: GitStatusFlag	
+GitCheckoutStrategy	gittyup.html#GitCheckoutStrategy	gittyup: GitCheckoutStrategy	
+GitErrorClass	gittyup.html#GitErrorClass	gittyup: GitErrorClass	
+GitStatusOption	gittyup.html#GitStatusOption	gittyup: GitStatusOption	
+GitBranchType	gittyup.html#GitBranchType	gittyup: GitBranchType	
+GitPathSpecFlag	gittyup.html#GitPathSpecFlag	gittyup: GitPathSpecFlag	
+hash	gittyup.html#hash,git_checkout_strategy_t	gittyup: hash(gcs: GitCheckoutStrategy): Hash	
+dumpError	gittyup.html#dumpError,git_error_code	gittyup: dumpError(code: GitResultCode): string	
+gitFail	gittyup.html#gitFail.t,git_error_code,untyped	gittyup: gitFail(code: GitResultCode; body: untyped)	
+gitFail	gittyup.html#gitFail.t,typed,git_error_code,untyped	gittyup: gitFail(allocd: typed; code: GitResultCode; body: untyped)	
+gitTrap	gittyup.html#gitTrap.t,git_error_code,untyped	gittyup: gitTrap(code: GitResultCode; body: untyped)	
+gitTrap	gittyup.html#gitTrap.t,typed,git_error_code,untyped	gittyup: gitTrap(allocd: typed; code: GitResultCode; body: untyped)	
+ok	gittyup.html#ok.t,Result[T,git_error_code],T	gittyup: ok[T](self: var Result[T, GitResultCode]; x: T): auto	
+err	gittyup.html#err.t,Result[T,git_error_code],git_error_code	gittyup: err[T](self: var Result[T, GitResultCode]; x: GitResultCode): auto	
+ok	gittyup.html#ok.t,T	gittyup: ok[T](x: T): auto	
+err	gittyup.html#err.t,git_error_code	gittyup: err[T](x: GitResultCode): auto	
+`:=`	gittyup.html#:=.t,,Result[T,git_error_code],untyped	gittyup: `:=`[T](v: untyped{nkIdent}; vv: Result[T, GitResultCode]; body: untyped): untyped	
+init	gittyup.html#init	gittyup: init(): bool	
+shutdown	gittyup.html#shutdown	gittyup: shutdown(): bool	
+free	gittyup.html#free,ptr.T	gittyup: free[T: GitHeapGits](point: ptr T)	
+free	gittyup.html#free,ptr.T_2	gittyup: free[T: NimHeapGits](point: ptr T)	
+free	gittyup.html#free,sinkGitThing	gittyup: free(thing: sink GitThing)	
+free	gittyup.html#free,sinkGitTreeEntries	gittyup: free(entries: sink GitTreeEntries)	
+free	gittyup.html#free,string	gittyup: free(s: string)	
+short	gittyup.html#short,GitOid,int	gittyup: short(oid: GitOid; size: int): GitResult[string]	
+url	gittyup.html#url,GitRemote	gittyup: url(remote: GitRemote): Uri	
+oid	gittyup.html#oid,GitTreeEntry	gittyup: oid(entry: GitTreeEntry): GitOid	
+oid	gittyup.html#oid,GitReference	gittyup: oid(got: GitReference): GitOid	
+oid	gittyup.html#oid,GitObject	gittyup: oid(obj: GitObject): GitOid	
+oid	gittyup.html#oid,GitThing	gittyup: oid(thing: GitThing): GitOid	
+oid	gittyup.html#oid,GitTag	gittyup: oid(tag: GitTag): GitOid	
+name	gittyup.html#name,GitReference	gittyup: name(got: GitReference): string	
+name	gittyup.html#name,GitTreeEntry	gittyup: name(entry: GitTreeEntry): string	
+name	gittyup.html#name,GitRemote	gittyup: name(remote: GitRemote): string	
+isTag	gittyup.html#isTag,GitReference	gittyup: isTag(got: GitReference): bool	
+flags	gittyup.html#flags,GitStatus	gittyup: flags(status: GitStatus): set[GitStatusFlag]	
+repositoryPath	gittyup.html#repositoryPath,GitRepository	gittyup: repositoryPath(repo: GitRepository): string	
+`$`	gittyup.html#$,GitTagTable	gittyup: `$`(tags: GitTagTable): string	
+`$`	gittyup.html#$,GitPathSpec	gittyup: `$`(ps: GitPathSpec): string	
+`$`	gittyup.html#$,GitRevWalker	gittyup: `$`(walker: GitRevWalker): string	
+`$`	gittyup.html#$,GitRemote	gittyup: `$`(remote: GitRemote): string	
+`$`	gittyup.html#$,GitRepository	gittyup: `$`(repo: GitRepository): string	
+`$`	gittyup.html#$,git_buf	gittyup: `$`(buffer: git_buf): string	
+`$`	gittyup.html#$,ptr.git_buf	gittyup: `$`(buffer: ptr git_buf): string	
+`$`	gittyup.html#$,ptr.git_annotated_commit	gittyup: `$`(annotated: ptr git_annotated_commit): string	
+`$`	gittyup.html#$,GitOid	gittyup: `$`(oid: GitOid): string	
+`$`	gittyup.html#$,GitTag	gittyup: `$`(tag: GitTag): string	
+`$`	gittyup.html#$,GitReference	gittyup: `$`(reference: GitReference): string	
+`$`	gittyup.html#$,GitTreeEntry	gittyup: `$`(entry: GitTreeEntry): string	
+`$`	gittyup.html#$,GitObject	gittyup: `$`(obj: GitObject): string	
+`$`	gittyup.html#$,GitCommit	gittyup: `$`(commit: GitCommit): string	
+`$`	gittyup.html#$,GitThing	gittyup: `$`(thing: GitThing): string	
+`$`	gittyup.html#$,GitStatus	gittyup: `$`(status: GitStatus): string	
+copy	gittyup.html#copy,GitCommit	gittyup: copy(commit: GitCommit): GitResult[GitCommit]	
+copy	gittyup.html#copy,GitThing	gittyup: copy(thing: GitThing): GitResult[GitThing]	
+copy	gittyup.html#copy,GitOid	gittyup: copy(oid: GitOid): GitResult[GitOid]	
+branchName	gittyup.html#branchName,GitReference	gittyup: branchName(got: GitReference): string	
+isBranch	gittyup.html#isBranch,GitReference	gittyup: isBranch(got: GitReference): bool	
+owner	gittyup.html#owner,GitThing	gittyup: owner(thing: GitThing): GitRepository	
+owner	gittyup.html#owner,GitCommit	gittyup: owner(commit: GitCommit): GitRepository	
+owner	gittyup.html#owner,GitReference	gittyup: owner(reference: GitReference): GitRepository	
+message	gittyup.html#message,GitCommit	gittyup: message(commit: GitCommit): string	
+message	gittyup.html#message,GitTag	gittyup: message(tag: GitTag): string	
+message	gittyup.html#message,GitThing	gittyup: message(thing: GitThing): string	
+summary	gittyup.html#summary,GitCommit	gittyup: summary(commit: GitCommit): string	
+summary	gittyup.html#summary,GitThing	gittyup: summary(thing: GitThing): string	
+free	gittyup.html#free,sinkGitTagTable	gittyup: free(table: sink GitTagTable)	
+hash	gittyup.html#hash,GitOid	gittyup: hash(oid: GitOid): Hash	
+hash	gittyup.html#hash,GitTag	gittyup: hash(tag: GitTag): Hash	
+hash	gittyup.html#hash,GitThing	gittyup: hash(thing: GitThing): Hash	
+commit	gittyup.html#commit,GitThing	gittyup: commit(thing: GitThing): GitCommit	
+committer	gittyup.html#committer,GitThing	gittyup: committer(thing: GitThing): GitSignature	
+author	gittyup.html#author,GitThing	gittyup: author(thing: GitThing): GitSignature	
+clone	gittyup.html#clone,Uri,string,string	gittyup: clone(uri: Uri; path: string; branch = &quot;&quot;): GitResult[GitRepository]	
+setHeadDetached	gittyup.html#setHeadDetached,GitRepository,GitOid	gittyup: setHeadDetached(repo: GitRepository; oid: GitOid): GitResultCode	
+setHeadDetached	gittyup.html#setHeadDetached,GitRepository,string	gittyup: setHeadDetached(repo: GitRepository; reference: string): GitResultCode	
+repositoryOpen	gittyup.html#repositoryOpen,string	gittyup: repositoryOpen(path: string): GitResult[GitRepository]	
+openRepository	gittyup.html#openRepository,string	gittyup: openRepository(path: string): GitResult[GitRepository]	
+repositoryHead	gittyup.html#repositoryHead,GitRepository	gittyup: repositoryHead(repo: GitRepository): GitResult[GitReference]	
+headReference	gittyup.html#headReference,GitRepository	gittyup: headReference(repo: GitRepository): GitResult[GitReference]	
+remoteLookup	gittyup.html#remoteLookup,GitRepository,string	gittyup: remoteLookup(repo: GitRepository; name: string): GitResult[GitRemote]	
+remoteRename	gittyup.html#remoteRename,GitRepository,string,string	gittyup: remoteRename(repo: GitRepository; prior: string; next: string): GitResult[\n    seq[string]]	
+remoteDelete	gittyup.html#remoteDelete,GitRepository,string	gittyup: remoteDelete(repo: GitRepository; name: string): GitResultCode	
+remoteCreate	gittyup.html#remoteCreate,GitRepository,string,Uri	gittyup: remoteCreate(repo: GitRepository; name: string; url: Uri): GitResult[GitRemote]	
+`==`	gittyup.html#==,GitOid,GitOid	gittyup: `==`(a, b: GitOid): bool	
+targetId	gittyup.html#targetId,GitThing	gittyup: targetId(thing: GitThing): GitOid	
+target	gittyup.html#target,GitThing	gittyup: target(thing: GitThing): GitResult[GitThing]	
+tagList	gittyup.html#tagList,GitRepository	gittyup: tagList(repo: GitRepository): GitResult[seq[string]]	
+lookupThing	gittyup.html#lookupThing,GitRepository,string	gittyup: lookupThing(repo: GitRepository; name: string): GitResult[GitThing]	
+newTagTable	gittyup.html#newTagTable,int	gittyup: newTagTable(size = 32): GitTagTable	
+tagTable	gittyup.html#tagTable,GitRepository	gittyup: tagTable(repo: GitRepository): GitResult[GitTagTable]	
+shortestTag	gittyup.html#shortestTag,GitTagTable,string	gittyup: shortestTag(table: GitTagTable; oid: string): string	
+getHeadOid	gittyup.html#getHeadOid,GitRepository	gittyup: getHeadOid(repo: GitRepository): GitResult[GitOid]	
+repositoryState	gittyup.html#repositoryState,GitRepository	gittyup: repositoryState(repository: GitRepository): GitRepoState	
+status	gittyup.html#status.i,GitRepository,git_status_show_t	gittyup: status(repository: GitRepository; show: GitStatusShow;\n       flags = defaultStatusFlags): GitResult[GitStatus]	
+checkoutTree	gittyup.html#checkoutTree,GitRepository,GitThing	gittyup: checkoutTree(repo: GitRepository; thing: GitThing;\n             strategy = defaultCheckoutStrategy): GitResultCode	
+checkoutTree	gittyup.html#checkoutTree,GitRepository,string	gittyup: checkoutTree(repo: GitRepository; reference: string;\n             strategy = defaultCheckoutStrategy): GitResultCode	
+checkoutHead	gittyup.html#checkoutHead,GitRepository	gittyup: checkoutHead(repo: GitRepository; strategy = defaultCheckoutStrategy): GitResultCode	
+setHead	gittyup.html#setHead,GitRepository,string	gittyup: setHead(repo: GitRepository; short: string): GitResultCode	
+referenceDWIM	gittyup.html#referenceDWIM,GitRepository,string	gittyup: referenceDWIM(repo: GitRepository; short: string): GitResult[GitReference]	
+lookupTreeThing	gittyup.html#lookupTreeThing,GitRepository,string	gittyup: lookupTreeThing(repo: GitRepository; path = &quot;HEAD&quot;): GitResult[GitThing]	
+treeEntryByPath	gittyup.html#treeEntryByPath,GitThing,string	gittyup: treeEntryByPath(thing: GitThing; path: string): GitResult[GitTreeEntry]	
+treeEntryToThing	gittyup.html#treeEntryToThing,GitRepository,GitTreeEntry	gittyup: treeEntryToThing(repo: GitRepository; entry: GitTreeEntry): GitResult[GitThing]	
+treeWalk	gittyup.html#treeWalk,GitTree,git_treewalk_mode,git_treewalk_cb,pointer	gittyup: treeWalk(tree: GitTree; mode: git_treewalk_mode; callback: git_treewalk_cb;\n         payload: pointer): git_error_code	
+treeWalk	gittyup.html#treeWalk,GitTree,git_treewalk_mode	gittyup: treeWalk(tree: GitTree; mode: git_treewalk_mode): GitResult[GitTreeEntries]	
+treeWalk	gittyup.html#treeWalk,GitThing	gittyup: treeWalk(tree: GitThing; mode = GIT_TREEWALK_PRE): GitResult[GitTreeEntries]	
+newRevWalk	gittyup.html#newRevWalk,GitRepository	gittyup: newRevWalk(repo: GitRepository): GitResult[GitRevWalker]	
+next	gittyup.html#next,GitRevWalker	gittyup: next(walker: GitRevWalker): GitResult[GitOid]	
+push	gittyup.html#push,GitRevWalker,GitOid	gittyup: push(walker: GitRevWalker; oid: GitOid): GitResultCode	
+lookupCommit	gittyup.html#lookupCommit,GitRepository,GitOid	gittyup: lookupCommit(repo: GitRepository; oid: GitOid): GitResult[GitThing]	
+revWalk	gittyup.html#revWalk.i,GitRepository,GitRevWalker	gittyup: revWalk(repo: GitRepository; walker: GitRevWalker): GitResult[GitThing]	
+newPathSpec	gittyup.html#newPathSpec,openArray[string]	gittyup: newPathSpec(spec: openArray[string]): GitResult[GitPathSpec]	
+commitsForSpec	gittyup.html#commitsForSpec.i,GitRepository,openArray[string]	gittyup: commitsForSpec(repo: GitRepository; spec: openArray[string]): GitResult[GitThing]	
+tagCreateLightweight	gittyup.html#tagCreateLightweight,GitRepository,GitThing,string	gittyup: tagCreateLightweight(repo: GitRepository; target: GitThing; name: string;\n                     force = false): GitResult[GitOid]	
+tagCreateLightweight	gittyup.html#tagCreateLightweight,GitThing,string	gittyup: tagCreateLightweight(target: GitThing; name: string; force = false): GitResult[\n    GitOid]	
+branchUpstream	gittyup.html#branchUpstream,GitReference	gittyup: branchUpstream(branch: GitReference): GitResult[GitReference]	
+setBranchUpstream	gittyup.html#setBranchUpstream,GitReference,string	gittyup: setBranchUpstream(branch: GitReference; name: string): GitResultCode	
+branchRemoteName	gittyup.html#branchRemoteName,GitRepository,string	gittyup: branchRemoteName(repo: GitRepository; branch: string): GitResult[string]	
+branches	gittyup.html#branches.i,GitRepository	gittyup: branches(repo: GitRepository; flags = {GIT_BRANCH_LOCAL, GIT_BRANCH_REMOTE}): GitResult[\n    GitReference]	
+hasThing	gittyup.html#hasThing,GitTagTable,GitThing	gittyup: hasThing(tags: GitTagTable; thing: GitThing): bool	
+newSignature	gittyup.html#newSignature,string,string,Time	gittyup: newSignature(name, email: string; time: Time): GitResult[GitSignature]	
+defaultSignature	gittyup.html#defaultSignature,GitRepository	gittyup: defaultSignature(repo: GitRepository): GitResult[GitSignature]	
+defaultSignature	gittyup.html#defaultSignature,GitRepository,Time	gittyup: defaultSignature(repo: GitRepository; time: Time): GitResult[GitSignature]	
+tagCreate	gittyup.html#tagCreate,GitRepository,GitThing,string,GitSignature,string	gittyup: tagCreate(repo: GitRepository; target: GitThing; name: string;\n          tagger: GitSignature; message = &quot;&quot;; force = false): GitResult[GitOid]	
+tagCreate	gittyup.html#tagCreate,GitRepository,GitThing,string,string	gittyup: tagCreate(repo: GitRepository; target: GitThing; name: string; message = &quot;&quot;;\n          force = false): GitResult[GitOid]	
+tagCreate	gittyup.html#tagCreate,GitThing,string,string	gittyup: tagCreate(target: GitThing; name: string; message = &quot;&quot;; force = false): GitResult[\n    GitOid]	
+tagDelete	gittyup.html#tagDelete,GitRepository,string	gittyup: tagDelete(repo: GitRepository; name: string): GitResultCode	
+repositoryDiscover	gittyup.html#repositoryDiscover,string,seq[string]	gittyup: repositoryDiscover(path: string; ceilings: seq[string] = @[]; xfs = true): GitResult[\n    string]	
